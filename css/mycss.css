@@ -1,0 +1,279 @@
+@import url(reset.css);
+
+
+body{
+    background-color: #e5e5e5;
+    background-image: url(../images/bodyBg.jpg);
+    background-repeat: repeat-y;
+}
+
+#wrapper{
+   width: 920px;
+   outline: 0px solid #cc0000;
+   margin: 0 auto;
+}
+#logo{
+    display: block;
+    width: 360px;
+    height: 104px;
+    outline: 0px solid #cc0000;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: 2px 22px;
+     font-size: 0px;
+     /*конец блока с логотипом*/
+     
+     /*начало блока с нивигацией*/
+}
+#nav{
+   width: 920px;
+   height: 55px;
+   outline: 0px solid #cccccc;
+}
+#nav li{
+    float: left;
+    outline: 0px solid #0000cc;
+    height: 55px; 
+    width: 184px;
+    text-align: center;
+}
+#nav li a{
+  outline: 0px solid #00cc00;
+  display: block;
+  height: 40px; /*высоту ссылок делаем такую же как высоту контейнера*/
+  padding-top: 12px;/*при этом не забываем вычесть эту которая отведена под содержимое вычесть из высоты контейнера*/
+  font: 17px Arial, sans-serif;
+  color: #000000;
+  text-decoration: none;/*убираем подчеркивание*/
+  background-image: url(../images/secondNav.png);
+  background-repeat: no-repeat;
+  background-position: 0 -55px;/*изначально показывает верхнюю часть картинки прописываем -55 что бы стала на фон нижняя часть картинки*/
+}
+
+#nav li a.first{
+  background-image: url(../images/firstNav.png);   
+}
+#nav li a.last{
+  background-image: url(../images/lastNav.png);
+}
+#nav li a:hover{
+  background-position: 0 0; /*меняем картинку при наведении*/  
+  color: #ffffff;
+}
+/*конец блока с навигацией*/
+
+/*начало блока дартс*/
+#darts{
+    height: 428px;
+    background-image: url(../images/darts.png);
+    background-repeat: no-repeat;
+    background-position: 0 20px;
+    position: relative;
+}
+#sloganContainer{
+    width: 396px;
+    height: 207px;
+    position: absolute;
+    outline: 0px solid #cc0000;
+    top: 120px;
+    right: 12px;
+}
+#sloganContainer h1{
+    font: bold 50px Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    text-indent: -24px;/*с помощью красной строки прижимаем текст к контейнеру*/ 
+}
+#sloganContainer h1 span{
+    font: bold 32px Arial, sans-serif;
+    color: #000000;
+}
+#sloganContainer a{
+    display: block;
+    width: 166px;
+    height: 35px;
+    outline: 0px solid #cccccc; 
+    margin: 36px 0 0 82px;
+    background-image: url(../images/readmoreBg.png);
+    background-repeat: no-repeat;
+     font: bold 26px Arial, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 22px;/*при этом мы эти отступы должны вычесть из ширины и высоты*/ 
+}
+/*конец блока дартс*/
+
+/*начало блока с фотографиями*/
+#photos{
+    height: 241px;
+    outline: 0px solid #cc0000;
+    background-image: url(../images/photosBg.png);
+    background-repeat: no-repeat;
+    padding: 20px 22px 20px 20px;
+}
+#photos div{
+float: left;
+width: 210px;
+height: 241px;
+outline: 0px solid #cccccc;
+}
+#history, #opp,#work{
+    margin-right: 12px;
+}
+#history{
+    background-image: url(../images/photo1.jpg);
+    background-repeat: no-repeat;
+}
+#opp{
+  background-image: url(../images/photo2.jpg);
+    background-repeat: no-repeat;  
+}
+#work{
+ background-image: url(../images/photo3.jpg);
+    background-repeat: no-repeat;   
+}
+#contacts{
+ background-image: url(../images/photo4.jpg);
+    background-repeat: no-repeat;   
+}
+#photos div h4{
+    height: 15px;
+    padding: 18px 0 0 13px;
+    margin-top: 144px;
+    outline: 0px solid #cc0000;
+    color: #318ea2;
+    font: bold 13px Arial, sans-serif;
+    overflow: hidden;/*для того что бы дизайн не посыпался при добавлении контента*/ 
+}
+#photos div p{
+    height: 34px;
+    padding: 3px 0 0 13px;
+    outline: 0px solid #cc0000;
+    color: #323232;
+    font: 13px Arial, sans-serif;
+    overflow: hidden;/*для того что бы дизайн не посыпался при добавлении контента*/ 
+}
+#photos div a{
+    display: block;
+    height: 17px;
+    width: 17px;
+    background-image: url(../images/linkBg.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 13px 0 0 13px;
+}
+/*конец блока с фотографиями*/ 
+
+/*начало большого блока*/
+#big{
+    
+outline: 0px solid #cc0000;
+background-image: url(../images/bigBg.png);
+background-repeat: repeat-y;
+padding: 30px 35px 20px 35px;
+}
+#bigR{
+    height: 20px;
+    outline: 0px solid #cc0000;
+    background-image: url(../images/bigR.png);
+}
+#business{
+     /*вычитаем внутренни отступы получается высота контейнера*/
+    width: 520px;
+    outline: 0px solid #cc0000;
+    float: left;
+    margin-right: 30px;
+}
+#projects{
+    width: 300px;/*вычитаем из общей ширины ширину блока бизнес а так же внутренние отступы слево и справо*/
+    outline: 0px solid #cc0000;
+     float: left;
+}
+#big h2{
+    font: bold 23px Arial, sans-serif;
+    color: #000000;
+    padding-bottom: 23px;
+}
+#business p{
+    font: 13px solid Arial, sans-serif;
+    color: #323232;
+}
+#business p.strong{
+    font-weight: bold;
+}
+#inBusiness{
+    outline: 0px solid #000000;
+    padding-left: 128px;
+    margin-top: 5px;
+    background-image: url(../images/inBusinessBg.png);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+#inBusiness p{
+    margin-bottom: 20px;
+}
+#business ul{
+    float: left;
+}
+.clear{
+   clear: both;
+}
+#b1{
+    margin-right: 53px;
+}
+#b2{
+    border-left: 0px solid #DADADA;
+}
+#business ul li a{
+    color: #308da2;
+    font: 13px Arial, sans-serif;
+}
+#business ul li{
+   padding-left: 20px;
+   background-image: url(../images/arrow.png);
+   background-repeat: no-repeat;
+   background-position: 0 5px;
+   margin-bottom: 4px;
+}
+#business ul#b2 li{
+  padding-left: 46px;
+  background-position: 26px 5px; /*отступ от линии между элементами списка */ 
+}
+#projects div{
+    padding-left: 112px;
+    outline: 0px solid #cc0000;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: 0 6px; 
+}
+#p1{
+    background-image: url(../images/p1.png);
+}
+#p2{
+    background-image: url(../images/p2.png);
+}
+#projects div#p3{
+    background-image: url(../images/p3.png);
+    margin-bottom: 0;
+}
+#projects p{
+    font: 13px Arial, sans-serif;
+    color:#323232;
+    margin-bottom: 16px;
+}
+#projects a{
+   display: block;
+   height: 17px;
+   width: 17px;
+   background-image: url(../images/linkBg2.png);
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+/*конец большого блока и начало footer*/
+
+#footer{
+    text-align: center;
+    padding: 27px 0 44px 0;
+    font: bold 13px Arial, sans-serif;
+    color:#000000;
+}
